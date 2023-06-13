@@ -1,37 +1,9 @@
-import { Text, Group, NavLink, Title, Stack, Button, Paper, Image } from '@mantine/core'
+import { Group, Paper } from '@mantine/core'
+import { Doodle, Footer, Navbar, Presentation } from '@ui'
 
-const Navbar = () => {
-  return (
-    <Stack>
-      <Title>
-        Raul Calvo
-      </Title>
-      <Group>
-        <Button>Link 1</Button>
-        <Button>Link 2</Button>
-      </Group>
-    </Stack>
-  )
-}
 
-const Presentation = () => {
-  return (
-    <Paper>
-      <Title>
-        Hola, soy Raul!
-      </Title>
-      <Text>
-        Bienvenido a mi blog, vas a encontrar post sobre lo que voy aprendiendo, enfocado especialmente en desarrollo web y arquitectura web.
-      </Text>
-    </Paper>
-  )
-}
 
-const Doodle = () => {
-  return (
-    <Image src='../assets/avatar.svg' alt='doodle'></Image>
-  )
-}
+
 
 const PostList = () => {
   return (
@@ -42,18 +14,6 @@ const PostList = () => {
 }
 
 
-const Footer = () => {
-  return (
-    <>
-      <Text m={'auto'}>Made by Raul 2023</Text>
-      <Group>
-        <NavLink label='astro' />
-        <NavLink label='mantine' />
-        <NavLink label='github' />
-      </Group>
-    </>
-  )
-}
 
 
 function App() {
